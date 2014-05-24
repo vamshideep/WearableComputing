@@ -75,8 +75,8 @@ unformatednames <- gsub("\\,","",unformatednames)
 ##Push all properly formated names to column names of our dataset
 names(xysubject) <- unformatednames
 
-##Find columns that have mean or standard deviations in their names
-##Included activity and subjects as well
+##Find columns that have mean or standard deviations in their names, please note I included gravityMean
+#tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, tBodyGyroJerkMean, activity and subjects as well
 meanstdcol <- grep("mean|std|activity|subject",names(xysubject))
 
 ##Data with only mean and standard deviation for each measurement
