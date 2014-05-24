@@ -25,11 +25,11 @@ I have cleaned up this data set and created the following files:
 
 - 'README.md'
 
-- 'CODEBOOK.md': Shows information about the variables, descriptions and detailed cleanup process performed
+- 'CODEBOOK.md': Shows information about the variables, descriptions and details of cleanup process 
 
-- 'run_analysis.R': Lists all code steps that have been performed on the original data set to clean up the data, please make sure to have original data set in the folder "UCI HAR Dataset"
+- 'run_analysis.R': R code to cleanup the original data (please make sure to have original data set in the folder "UCI HAR Dataset")
 
-- 'tidydata.txt' : This is the tidy data set that has been created after running "run_analysis.R"" code on the original data set
+- 'tidydata.txt' : This is the tidy data set that has been created after running "run_analysis.R" code on the original data set
 
 
 High level Steps/process performed to get to this data set:
