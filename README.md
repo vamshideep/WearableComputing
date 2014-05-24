@@ -37,12 +37,12 @@ High level Steps/process performed to get to this data set:
 - Combined training data with test data to create one data set
 - Added variable names for each column of the data 
 - Converted all variable names to lowercase
-4) Removed symbols and special characters 
-5) Added subjects info for each observation
-6) Added activity information for each observation
-7) Replaced activity info with more meaningful descriptive names
-8) Choose only mean and standandard deviation variables from the entire dataset
-9) Created a second independent tidy data set with the average of each variable for each activity and each subject
+- Removed symbols and special characters 
+- Added subjects info for each observation
+- Added activity information for each observation
+- Replaced activity info with more meaningful descriptive names
+- Choose only mean and standandard deviation variables from the entire dataset
+- Created a second independent tidy data set with the average of each variable for each activity and each subject
 
 
 License:
