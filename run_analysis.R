@@ -1,3 +1,6 @@
+##Check for UCI HAR Dataset folder
+if(!file.exists("UCI HAR Dataset")){print("Please make sure UCI HAR Dataset folder is available")}
+
 ##Make sure the files are available in the folder
 list.files("./UCI HAR Dataset/")
 
@@ -79,10 +82,11 @@ meanstdcol <- grep("mean|std|activity|subject",names(xysubject))
 ##Data with only mean and standard deviation for each measurement
 datameansstd <- xysubject[,meanstdcol]
 
+##Melt the data set with activity and subjects as Id's
 xysubjectmelt <- melt(datameansstd,id=c("activity","subject"))
 
-
+##dcast them to include all the combinations of subject and activity for each variable and perform mean
 sds <- dcast(xysubjectmelt,subject + activity ~ variable,mean)
-head(sds)
-str(sds)
 
+##Write the resulting tidy set to UCI HAR Dataset folder
+write.table(sds,file="./UCI HAR Dataset/tidydata.txt")
