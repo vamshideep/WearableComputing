@@ -27,9 +27,9 @@ I have cleaned up this data set and created the following files:
 
 - 'CODEBOOK.md': Shows information about the variables, descriptions and detailed cleanup process performed
 
-- 'run_analysis.R': Lists all code steps that have been performed on the original dataset to clean up the data
+- 'run_analysis.R': Lists all code steps that have been performed on the original data set to clean up the data, please make sure to have original data set in the folder "UCI HAR Dataset"
 
-- 'tidydata.txt' : This is the tidy data that has been created after performing all the steps in the above code
+- 'tidydata.txt' : This is the tidy data set that has been created after running "run_analysis.R"" code on the original data set
 
 
 High level Steps/process performed to get to this data set:
