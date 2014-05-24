@@ -86,7 +86,8 @@ datameansstd <- xysubject[,meanstdcol]
 xysubjectmelt <- melt(datameansstd,id=c("activity","subject"))
 
 ##dcast them to include all the combinations of subject and activity for each variable and perform mean
-sds <- dcast(xysubjectmelt,subject + activity ~ variable,mean)
+tidydata <- dcast(xysubjectmelt,subject + activity ~ variable,mean)
 
 ##Write the resulting tidy set to UCI HAR Dataset folder
-write.table(sds,file="./UCI HAR Dataset/tidydata.txt")
+write.table(tidydata,file="./UCI HAR Dataset/tidydata.txt")
+
