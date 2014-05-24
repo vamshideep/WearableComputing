@@ -34,9 +34,9 @@ I have collected, worked with and cleaned up this data set and created the follo
 
 High level Steps/process performed to get to this data set:
 ============================================================================
-1) Combined training data with test data to create one data set
-2) Added variable names for each column of the data 
-3) Converted all variable names to lowercase
+- Combined training data with test data to create one data set
+- Added variable names for each column of the data 
+- Converted all variable names to lowercase
 4) Removed symbols and special characters 
 5) Added subjects info for each observation
 6) Added activity information for each observation
